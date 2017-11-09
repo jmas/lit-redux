@@ -45,7 +45,7 @@ render(
 
 [Live Demo](https://codepen.io/alex_maslakov/pen/RjKJNo?editors=1000)
 
-## Current Progress
+## Current progress
 
 * Implemented `connect()` function (only `storeKey` option is available)
 

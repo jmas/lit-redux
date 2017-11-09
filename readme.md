@@ -32,9 +32,9 @@ const actions = {
 const todosView = connect(
   state => ({todos: state}),
   dispatch => ({ actions: bindActionCreators(actions, dispatch) })
-)(props => html`
-  ${ props.todos.map(text => html`<p>${ text }</p>`) }
-  <button type="button" onclick="${ () => props.actions.add() }">Add</button>
+)(({todos, actions}) => html`
+  ${ todos.map(text => html`<p>${ text }</p>`) }
+  <button type="button" onclick="${ () => actions.add() }">Add</button>
 `);
   
 render(

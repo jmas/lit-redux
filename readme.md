@@ -9,14 +9,14 @@ import {html, render} from 'lit-html/lib/lit-extended';
 import {connect} from 'lit-redux';
 import {createStore, bindActionCreators} from 'redux';
 
-function todos(state = [], action) {
+const todos = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
-      return state.concat([action.text])
+      return state.concat([action.text]);
     default:
-      return state
+      return state;
   }
-}
+};
 
 const store = createStore(todos, ['Use Redux']);
 
@@ -30,7 +30,7 @@ const actions = {
 };
 
 const todosView = connect(
-  state => ({todos: state}),
+  state => ({ todos: state }),
   dispatch => ({ actions: bindActionCreators(actions, dispatch) })
 )(({todos, actions}) => html`
   ${ todos.map(text => html`<p>${ text }</p>`) }

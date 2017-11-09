@@ -1,0 +1,14 @@
+{
+  "name": "lit-redux",
+  "version": "1.0.0",
+  "description": "`lit-redux` is implementation of [`react-redux` API](https://github.com/reactjs/react-redux) for [`lit-html`](https://github.com/PolymerLabs/lit-html) library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-html": "^0.7.1"
+  }
+}

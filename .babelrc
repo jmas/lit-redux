@@ -1,0 +1,11 @@
+{
+    "presets": [
+        "stage-2",
+        ["latest", {
+        "es2015": {
+            "modules": false
+        }
+        }]
+    ],
+    "plugins": ["external-helpers"]
+}

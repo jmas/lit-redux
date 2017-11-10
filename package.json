@@ -1,14 +1,23 @@
 {
   "name": "lit-redux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "`lit-redux` is implementation of [`react-redux` API](https://github.com/reactjs/react-redux) for [`lit-html`](https://github.com/PolymerLabs/lit-html) library.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup --config rollup.config.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "lit-html": "^0.7.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "rollup": "^0.51.2",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   }
 }
